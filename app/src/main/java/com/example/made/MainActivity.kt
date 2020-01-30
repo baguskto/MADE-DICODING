@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import com.example.made.Fragment.FragmentActivity
+import com.example.made.Fragment.HomeFragment
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
@@ -21,6 +23,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         val btnMoveIntent: Button = findViewById(R.id.btn_moveIntent)
         btnMoveIntent.setOnClickListener(this)
 
+        val btnToFragment: Button = findViewById(R.id.btn_toFragment)
+        btnToFragment.setOnClickListener(this)
+
     }
 
     override fun onClick(v: View) {
@@ -31,12 +36,15 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             }
 
             R.id.btn_moveIntent -> {
-                val moveIntent = Intent( this, IntentActivity::class.java)
+                val moveIntent = Intent(this, IntentActivity::class.java)
                 startActivity(moveIntent)
+            }
 
+            R.id.btn_toFragment -> {
+                val moveFragment = Intent(this, FragmentActivity::class.java)
+                startActivity(moveFragment)
+            }
         }
     }
 
-
-
-}}
+}

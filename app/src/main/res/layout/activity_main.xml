@@ -22,4 +22,11 @@
         android:text="Intent"
         android:paddingBottom="16dp"/>
 
+    <Button
+        android:id="@+id/btn_toFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fragment"
+        android:paddingBottom="16dp"/>
+
 </LinearLayout>
