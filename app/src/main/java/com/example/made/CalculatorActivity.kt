@@ -35,9 +35,9 @@ class CalculatorActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onClick(v: View) {
         if (v.id == R.id.btn_calculate){
-            val inputLenght = edtLenght.text.toString()
-            val inputWidth = edtLenght.text.toString()
-            val inputHeight = edtHeight.text.toString()
+            val inputLenght = edtLenght.text.toString().trim()
+            val inputWidth = edtWidth.text.toString().trim()
+            val inputHeight = edtHeight.text.toString().trim()
 
             var isEmptyFields = false
 
@@ -56,8 +56,8 @@ class CalculatorActivity : AppCompatActivity(), View.OnClickListener {
                 edtHeight.error= "Field height tidak boleh kosong"
             }
 
-            if (isEmptyFields) {
-                val volume = inputLenght.toDouble() *inputWidth.toDouble()* inputHeight.toDouble()
+            if (!isEmptyFields) {
+                val volume = inputLenght.toDouble() * inputWidth.toDouble() * inputHeight.toDouble()
                 tvResult.text = volume.toString()
             }
 

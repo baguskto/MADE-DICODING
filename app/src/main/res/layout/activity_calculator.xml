@@ -13,20 +13,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:lines="1"
-        android:text="@string/lenght" />
+        android:inputType="numberDecimal"
+        android:hint="@string/lenght" />
 
     <EditText
         android:id="@+id/edt_width"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:lines="1"
-        android:text="@string/width"/>
+        android:inputType="numberDecimal"
+        android:hint="@string/width"/>
 
     <EditText
         android:id="@+id/edt_height"
         android:layout_width="match_parent"
+        android:inputType="numberDecimal"
         android:layout_height="wrap_content"
-        android:text="@string/height"/>
+        android:hint="@string/height"/>
 
     <Button
         android:id="@+id/btn_calculate"
@@ -38,7 +41,7 @@
         android:id="@+id/tv_calculateResult"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/calculate_result"
+        tools:text="@string/calculate_result"
         android:textSize="24sp"
         android:gravity="center"
         android:textStyle="bold"/>

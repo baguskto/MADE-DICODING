@@ -20,5 +20,33 @@
         android:paddingBottom="16dp"
         android:text="Move with data"/>
 
+    <Button
+        android:id="@+id/btn_moveWithParcelable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:text="Intent With Object Parcelable"/>
+
+<Button
+        android:id="@+id/btn_intentImplicit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:text="Dial number"/>
+
+<Button
+        android:id="@+id/btn_move_for_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:text="Move with Result"/>
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/result_from_activity"
+        android:textSize="24sp" />
 
 </LinearLayout>
