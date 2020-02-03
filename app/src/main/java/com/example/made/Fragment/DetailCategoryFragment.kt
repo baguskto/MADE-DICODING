@@ -74,6 +74,8 @@ class DetailCategoryFragment : Fragment(), View.OnClickListener {
     override fun onClick(v: View) {
         when (v.id){
             R.id.btn_profile -> {
+                val mIntent = Intent(activity, ProfileActivity::class.java)
+                startActivity(mIntent)
 
             }
 

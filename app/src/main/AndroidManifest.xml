@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Fragment.FragmentActivity"></activity>
+        <activity android:name=".Fragment.ProfileActivity"></activity>
+        <activity android:name=".Fragment.FragmentActivity" />
         <activity android:name=".IntentPacakage.MoveWithResultActivity" />
         <activity android:name=".IntentPacakage.MoveWithObjectActivity" />
         <activity android:name=".IntentPacakage.MoveWithData" />
